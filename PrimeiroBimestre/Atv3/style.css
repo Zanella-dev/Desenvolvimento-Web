@@ -1,0 +1,129 @@
+/* 1. Reset básico */
+* {
+    box-sizing: border-box;
+}
+
+/* 2. Corpo da página (Fundo azul clarinho) */
+body {
+    background-color: #dceefc; 
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* 3. Cabeçalho (Fundo azul escuro) */
+header {
+    background-color: #1a365d; 
+    color: #ffffff;
+    padding: 20px 40px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    margin: 0 0 10px 0;
+    font-size: 32px;
+}
+
+/* 4. Menu de Navegação */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff; /* Texto branco para contrastar no fundo azul escuro */
+    font-weight: bold;
+    padding-bottom: 3px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: #93c5fd; /* Azul mais clarinho ao passar o mouse */
+    border-bottom: 2px solid #93c5fd;
+}
+
+/* 5. Área Central da Página */
+main {
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* 6. O "Card" do Post Principal */
+article {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); /* Sombra suave */
+    margin-bottom: 40px;
+}
+
+/* 7. Encaixe da Imagem no Topo do Card */
+.imagem-topo-card {
+    width: calc(100% + 60px); 
+    margin: -30px -30px 20px -30px; 
+    height: 350px; /* Altura do banner da imagem */
+    object-fit: cover; 
+    border-radius: 12px 12px 0 0; /* Arredonda apenas os cantos de cima */
+    display: block;
+}
+
+/* 8. Textos do Post */
+article h2 {
+    font-size: 28px;
+    color: #1a365d;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+article time {
+    display: block;
+    color: #64748b;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+article p {
+    font-size: 16px;
+    color: #334155;
+    line-height: 1.6;
+}
+
+/* 9. Posts Relacionados (Discretos) */
+aside {
+    padding: 10px 0;
+}
+
+aside h3 {
+    font-size: 18px;
+    color: #1a365d;
+    margin-bottom: 10px;
+}
+
+aside ul {
+    list-style-type: disc; /* Volta as bolinhas na lista lateral */
+    padding-left: 20px;
+}
+
+aside a {
+    color: #475569;
+    text-decoration: none;
+    line-height: 1.8;
+}
+
+aside a:hover {
+    color: #1a365d;
+    text-decoration: underline;
+}
+
+/* 10. Rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #64748b;
+    font-size: 14px;
+}
